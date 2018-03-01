@@ -11,7 +11,7 @@ a multi-page application base on Webpack, jQuery library, Less.js and Jade templ
 - [x] 图片资源引入，已经公共资源的提取合并 
 
 ## 步骤
-    $ git clone https://github.com/bodyno/react-starter-kit.git
+    $ git clone https://github.com/kkkkira/webpack-multi-page.git
     $ cd webpack-multi-page
     $ npm install                   
     $ npm start
