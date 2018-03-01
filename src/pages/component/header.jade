@@ -1,0 +1,10 @@
+mixin headerItem(...items)
+    each item in items
+        a.st-header-nav(href='/' + item[1])= item[0]
+
+
+
+div.st-header
+    div.st-container
+        div
+            + headerItem(['Home','welcome'],['article','article'])

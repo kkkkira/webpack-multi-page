@@ -1,0 +1,67 @@
+@import "global";
+@images : "../images";
+
+body{
+  width: 100%;
+  position: relative;
+  background-color: #fff6ec;
+}
+
+
+//顶部导航
+.st-header{
+  width: 100%;
+  height: 60px;
+  background-color: #ffb155;
+
+  .st-container {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .center;
+  }
+
+  .st-header-logo{
+    position: relative;
+    top: 40px;
+  }
+
+  .st-header-nav{
+    font-size: 22px;
+    margin-right: 70px;
+    color: #fff;
+    cursor: pointer;
+    transition: all .3s ease;
+    &:last-child{
+      margin-right: 0;
+    }
+    &:hover,
+    &-active{
+      color: #bf6a06;
+    }
+  }
+}
+
+
+//通用panel
+.st-panel{
+
+  .st-panel-title{
+    width: @centerWidth;
+    height: 80px;
+    padding-left: 60px;
+    margin-bottom: 2px;
+    font-size: 24px;
+    line-height: 80px;
+    color: #fff;
+    background:@panelColor url("@{images}/hdbg.png") no-repeat;
+    background-position-y: -10px;
+  }
+
+  .st-panel-body{
+    margin-bottom: 20px;
+    background-color: @panelColor;
+  }
+
+}

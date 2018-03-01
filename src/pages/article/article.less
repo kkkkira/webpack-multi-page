@@ -1,0 +1,126 @@
+@import "../../assets/css/common.less";
+
+@images : "../../assets/images";
+
+@TabColor: #340000;
+
+.st-tab{
+  width: 1200px;
+  min-height: 565px;
+  margin: 20px auto;
+  display: flex;
+  border-radius: 5px;
+  overflow: hidden;
+  background-color: #ffe0bc;
+  .st-tab-nav{
+    width: 150px;
+    flex-grow: 0;
+    min-height: 565px;
+    padding-top: 10px;
+  }
+
+  .st-nav-item{
+    width: 100%;
+    height: 68px;
+    line-height: 70px;
+    text-align: center;
+    font-size: 16px;
+    color: #966832;
+    cursor: pointer;
+    transition: all .3s ease;
+    &-active,
+    &:hover{
+      color: #fff;
+      background-size: auto 60px;
+      background-position-x: 10px;
+    }
+  }
+
+  .st-tab-panel{
+    flex-grow: 1;
+    width: 918px;
+    min-height: 565px;
+  }
+
+  .st-tab-thumb{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    position: relative;
+    align-items: center;
+    padding: 0 45px;
+    overflow: hidden;
+  }
+
+  .st-thumb-item{
+    position: relative;
+    width: 90px;
+    height: 100%;
+    margin-right: 20px;
+    font-size: 16px;
+    line-height: 50px;
+    color: @TabColor;
+    text-align: center;
+    cursor: pointer;
+    z-index: 1;
+    &-active{
+      border-bottom: 2px solid #F67226;
+    }
+  }
+
+  .st-article-list{
+    list-style: disc inside;
+    padding: 25px 10px;
+    margin: 0 36px;
+  }
+
+  .st-article-item{
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 16px;
+    transition: all .3s ease;
+    &:hover{
+      background-color: rgba(152,147,130,.44);
+      .st-article-title,.st-article-time{
+        color: #d2d0cb;
+      }
+    }
+  }
+
+  .st-article-title{
+    display: block;
+    width: 80%;
+    cursor: pointer;
+    transition: all .3s ease;
+  }
+
+  .st-article-detail{
+    padding:25px 40px 40px 30px;
+  }
+
+  .article-detail-title{
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    color: @TabColor;
+    h1{
+      width: 70%;
+      font-size: 24px;
+    }
+    .article-detail-time{
+      margin-right: 10px;
+      font-size: 14px;
+      color: #514548;
+    }
+  }
+
+  .article-detail-content{
+    font-size: 16px;
+    line-height: 36px;
+    color: #333;
+  }
+}

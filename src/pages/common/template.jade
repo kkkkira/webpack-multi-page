@@ -1,0 +1,21 @@
+mixin createPanel( title, className )
+    div.st-panel
+        h1.st-panel-title= title
+        div.st-panel-body(class= className || '')
+            block
+
+mixin createImg(...items)
+    each item in items
+        img(src=item)
+
+doctype html
+html
+    head
+        title welcome
+        meta(http-equiv="Content-Type", content="text/html", charset="utf-8")
+    body
+        include ../component/header.jade
+        div.st-container
+            block content
+        block other
+
