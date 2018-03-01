@@ -15,4 +15,5 @@ a multi-page application base on Webpack, jQuery library, Less.js and Jade templ
     $ cd webpack-multi-page
     $ npm install                   
     $ npm start
+    打开 http://localhost:8080/welcome 查看
 
